@@ -13,7 +13,7 @@ import Stat from './Stat';
 import CRUDCategorie from './CRUDCategorie';
 import Marque from './CRUDMarque';
 // import Couleur from './CRUDCouleur';
-import Modifier from './Modifier';
+// import Modifier from './Modifier';
 
 function App() {
   return (
@@ -26,7 +26,7 @@ function App() {
   <Route path='/gestion' element={<CRUDCategorie/>} />
   <Route path='/marque' element={<Marque/>} />
   {/* <Route path='/couleur' element={<Couleur/>} /> */}
-  <Route path='/modifier' element={<Modifier/>} />
+  {/* <Route path='/modifier' element={<Modifier/>} /> */}
 </Routes>
 </Router>
   );
