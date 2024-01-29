@@ -204,7 +204,7 @@ export default function Detail() {
           
         </div>
         <div className="col-lg-4 offset-lg-1 p-0 overflow-hidden">
-            <img className="rounded-lg-3" src={sary} alt="Image de voiture" width="720"/>
+            <img className="rounded-lg-3" src={sary} alt="" width="720"/>
             
         </div>
       </div>

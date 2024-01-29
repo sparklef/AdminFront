@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import Chart from 'chart.js/auto'; // Importer Chart depuis chart.js
 
-const Courbe = ({labels, datas}) => {
+const Courbe = ({ labels, datas }) => {
   const chartRef = useRef(null);
 
   useEffect(() => {
@@ -42,7 +42,7 @@ const Courbe = ({labels, datas}) => {
 
     // Nettoyer le graphique lors de la destruction du composant
     return () => myChart.destroy();
-  }, []); // Exécuter cet effet uniquement au montage du composant
+  }, [labels, datas]); // Inclure labels et datas comme dépendances
 
   return <canvas ref={chartRef} width="400" height="200" />;
 };
