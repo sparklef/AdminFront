@@ -17,12 +17,10 @@ export default function Card({annonce,idvoiture,prix,date, image, lieu, descs}) 
                 <div className='py-2' />
                 <div className='card-body'>
                     <h5 className='card-title h3'>Prix :{prix}Ar</h5>
-                    {/* <p className='card-text h4'>Price: {prix} Ar</p> */}
                     <p className='card-text'>Date annonce: {datePart}</p>
                     <p className='card-text'>Description: {descs}</p>
                     <p className='card-text'>lieu: {lieu}</p>
                    <Link to={`/detail?idVoiture=${encodeURIComponent(idvoiture)}&prix=${encodeURIComponent(prix)}&annonce=${encodeURIComponent(annonce)}&image=${encodeURIComponent(image)}`}> <button className='btn btn-success btn-lg' >details annonce</button></Link>
-                   {/* <Link to={`/detail?idVoiture=${encodeURIComponent(idvoiture)}&annonce=${encodeURIComponent(annonce)}`}> <button className='btn btn-success btn-lg' >details annonce</button></Link> */}
                 </div>
             </div>
         </div>
