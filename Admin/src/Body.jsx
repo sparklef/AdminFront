@@ -75,7 +75,7 @@ export default function Body() {
 
           <ScrollPanel className="col-md-9" style={{ height: '100vh' }}>
             <h1 className="text-start">Annonce de voiture:</h1>
-            <div className="row">{filteredCards.map(card => <Card key={card.idAnnonce} annonce={card.idAnnonce} prix={card.prix} idvoiture={card.idCar} date={card.date_annonce} image={card.image_car} lieu={card.lieu} descs={card.description} />)}</div>
+            <div className="row">{filteredCards.map(card => <Card key={card.idAnnonce} annonce={card.idAnnonce} prix={card.prix} idvoiture={card.idCar} date={card.date_annonce} sary={card.image_car} lieu={card.lieu} descs={card.description} />)}</div>
           </ScrollPanel>
         </div>
       </div>
