@@ -18,7 +18,7 @@ export default function Categorie() {
   useEffect(() =>{
     const fetchData = async () => {
       try {
-        const reponse = await fetch('https://autooccasion-production.up.railway.app/api/marque/all');
+        const reponse = await fetch('https://autooccasionpart2-production.up.railway.app/api/marque/all');
         
         if(!reponse.ok){
           throw new Error ('erreur lors de la recuperation des details');
@@ -36,7 +36,7 @@ export default function Categorie() {
 
 const AddMarque = async () => {
   try {
-    const reponse = await fetch('https://autooccasion-production.up.railway.app/api/marque/create', {
+    const reponse = await fetch('https://autooccasionpart2-production.up.railway.app/api/marque/create', {
       method: 'POST',
       headers:{
         'Content-type': 'application/json',
@@ -60,7 +60,7 @@ const AddMarque = async () => {
 
 const DeleteMarque = async (idMarque) => {
   try {
-    const reponse = await fetch(`https://autooccasion-production.up.railway.app/api/marque/delete/${idMarque}`, {
+    const reponse = await fetch(`https://autooccasionpart2-production.up.railway.app/api/marque/delete/${idMarque}`, {
       method: 'DELETE',
       headers:{
         'Content-type': 'application/json',
@@ -83,7 +83,7 @@ const DeleteMarque = async (idMarque) => {
 
 const UpdateMarque = async (idMarque) => {
   try {
-    const reponse = await fetch(`https://autooccasion-production.up.railway.app/api/marque/update/${idMarque}`, {
+    const reponse = await fetch(`https://autooccasionpart2-production.up.railway.app/api/marque/update/${idMarque}`, {
       method: 'PUT',
       headers: {
         'Content-type': 'application/json',

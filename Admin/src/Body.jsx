@@ -13,7 +13,7 @@ export default function Body() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('https://autooccasion-production.up.railway.app/api/annonce/annonces_non_validees');
+        const response = await fetch('https://autooccasionpart2-production.up.railway.app/api/annonce/annonces_non_validees');
 
         if (!response.ok) {
           throw new Error('Erreur lors de la recuperation des annonces');

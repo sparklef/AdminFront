@@ -24,7 +24,7 @@ export default function Stat() {
   useEffect(() => {
     const fetchData = async () => {
       try{
-        const reponse = await fetch('https://autooccasion-production.up.railway.app/api/statistique/stat');
+        const reponse = await fetch('https://autooccasionpart2-production.up.railway.app/api/statistique/stat');
 
         if(!reponse.ok){
           throw new Error('Erreur lors de la recuperation des statistique');
@@ -42,7 +42,7 @@ export default function Stat() {
   useEffect(() => {
     const fetchData = async () => {
       try{
-        const reponse = await fetch('https://autooccasion-production.up.railway.app/api/statistique/statistiques');
+        const reponse = await fetch('https://autooccasionpart2-production.up.railway.app/api/statistique/statistiques');
 
         if(!reponse.ok){
           throw new Error('Erreur lors de la recuperation des statistique');

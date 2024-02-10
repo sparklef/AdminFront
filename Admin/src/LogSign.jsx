@@ -12,7 +12,7 @@ export default function LogSign() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('https://autooccasion-production.up.railway.app/api/admin/allAdmin');
+        const response = await fetch('https://autooccasionpart2-production.up.railway.app/api/admin/allAdmin');
         
         if (!response.ok) {
           throw new Error('Erreur lors de la récupération des administrateurs');

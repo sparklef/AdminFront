@@ -25,7 +25,7 @@ export default function Detail() {
     useEffect(() => {
       const fetchData = async () => {
         try {
-          const response = await fetch(`https://autooccasion-production.up.railway.app/api/voiture/findOne/${idVoiture}`);
+          const response = await fetch(`https://autooccasionpart2-production.up.railway.app/api/voiture/findOne/${idVoiture}`);
   
           if (!response.ok) {
             throw new Error('Erreur lors de la récupération des détails de la voiture');
@@ -53,7 +53,7 @@ export default function Detail() {
   
     const accept = async () => {
       try {
-        const response = await fetch(`https://autooccasion-production.up.railway.app/api/admin/validate_annonce/${idAnnonce}`, {
+        const response = await fetch(`https://autooccasionpart2-production.up.railway.app/api/admin/validate_annonce/${idAnnonce}`, {
           method: 'PUT',
         });
   
@@ -80,7 +80,7 @@ export default function Detail() {
   const DeleteAnnonce = () =>{
     const del = async () =>{
       try {
-        const reponse = await fetch(`https://autooccasion-production.up.railway.app/api/annonce/delete_annonce/${idAnnonce}`,{
+        const reponse = await fetch(`https://autooccasionpart2-production.up.railway.app/api/annonce/delete_annonce/${idAnnonce}`,{
           method:'DELETE',
         });
 

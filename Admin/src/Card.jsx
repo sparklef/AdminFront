@@ -13,7 +13,7 @@ export default function Card({annonce,idvoiture,prix,date, sary, lieu, descs}) {
     return (
         <div className='col-md-4 mb-4'>
             <div className="card">
-                <img src={sary} alt="" className='card-img-top img-fluid rounded' />
+                <img src={sary} alt="" className='card-img-top img-fluid rounded'style={{height: "300px"}} />
                 <div className='py-2' />
                 <div className='card-body'>
                     <h5 className='card-title h3'>Prix :{prix}Ar</h5>

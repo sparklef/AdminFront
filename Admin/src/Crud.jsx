@@ -13,9 +13,9 @@ export default function Crud() {
           <div className="mb-4">
           <Link to="/marque" ><button className="btn btn-success btn-lg w-100 btn-block">Gestion Marque </button></Link>
           </div>
-          {/* <div className="mb-4">
-          <Link to="/couleur" ><button className="btn btn-success btn-lg w-100 btn-block">Gestion Couleur</button></Link>
-          </div> */}
+          <div className="mb-4">
+          <Link to="/comission" ><button className="btn btn-success btn-lg w-100 btn-block">Commission </button></Link>
+          </div>
         </div>
   );
 }

@@ -20,7 +20,7 @@ export default function Categorie() {
   useEffect(() =>{
     const fetchData = async () => {
       try {
-        const reponse = await fetch('https://autooccasion-production.up.railway.app/api/categorie/allCategorie');
+        const reponse = await fetch('https://autooccasionpart2-production.up.railway.app/api/categorie/allCategorie');
         
         if(!reponse.ok){
           throw new Error ('erreur lors de la recuperation des details');
@@ -45,7 +45,7 @@ export default function Categorie() {
 
 const AddCategorie = async () => {
   try {
-    const reponse = await fetch('https://autooccasion-production.up.railway.app/api/categorie/insert', {
+    const reponse = await fetch('https://autooccasionpart2-production.up.railway.app/api/categorie/insert', {
       method: 'POST',
       headers:{
         'Content-type': 'application/json',
@@ -71,7 +71,7 @@ const AddCategorie = async () => {
 };
 const deleteCategorie = async (idCategorie) => {
   try {
-    const response = await fetch(`https://autooccasion-production.up.railway.app/api/categorie/delete/${idCategorie}`, {
+    const response = await fetch(`https://autooccasionpart2-production.up.railway.app/api/categorie/delete/${idCategorie}`, {
       method: 'DELETE',
       headers:{
         'Content-type': 'application/json',
@@ -94,7 +94,7 @@ const deleteCategorie = async (idCategorie) => {
 
 const updateCategories = async (idCategorie) => {
   try {
-    const reponse = await fetch(`https://autooccasion-production.up.railway.app/api/categorie/update/${idCategorie}`, {
+    const reponse = await fetch(`https://autooccasionpart2-production.up.railway.app/api/categorie/update/${idCategorie}`, {
       method: 'PUT',
       headers: {
         'Content-type': 'application/json',
